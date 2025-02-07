@@ -1,4 +1,4 @@
-# collab-on-GitHub-assignment
+# Expense Tracker Collab Project
 
 Andox
 
