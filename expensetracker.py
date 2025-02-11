@@ -34,7 +34,7 @@ def display_menu():
         elif choice == '4':
             deleting_expense()
         elif choice == '5':
-            print("Thank you for using the Expense Tracker.")
+            print("Thank you for using The Expense Tracker.")
             break
         else:
             print("Invalid choice. Please try again.")
