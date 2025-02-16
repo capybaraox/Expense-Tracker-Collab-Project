@@ -1,17 +1,34 @@
 print("ian sucks balls")
 
 
+# Dictionary to store expenses
 expenses = {}
 
-# add expense
-def add_expense(name, due_date):
-    expenses[name] = due_date
-    print(f"Expense '{name}' added with due date {due_date}.")
 
-# displays expense menu
+# add expense
+def add_expense():
+    category = input("Category: ")
+    amount = float(input("Amount: $"))
+    date = input("Date(DD/MM/YYYY): ")
+    #it adds the expense under the same category and creates another list if it doesnt exist
+    expenses.setdefault(category, []).append((amount, date))
+    print("Expense Added\n")
+
+#view expenses
+def view_expense():
+    if not expenses:
+        print("No expenses.\n")
+        return
+    #formatting for a header to display expenses
+    print("Category\tAmount\tDate")
+    print("-" * 30)
+    for category, records in expenses.items():
+        for amount, date in records:
+            print(f"{category}: ${amount} on {date}")
+
+
 def display_menu():
     while True:
-        # prints menu options
         print("\nExpense Menu")
         print("1. Add an expense")
         print("2. View all expenses")
@@ -20,13 +37,9 @@ def display_menu():
         print("5. Exit")
         
         choice = input("Enter your choice (1-4):")
+        
         if choice == '1':
-             # expense name and due date
-            name = input("Enter the expense name: ")
-            amount = float(input("Enter the amount of the expense: $"))
-            due_date = input("Enter date (DD/MM/YYYY): ")
-            add_expense(name, due_date)
-
+            add_expense()
         elif choice == '2':
             view_expense()
         elif choice == '3':
@@ -41,3 +54,4 @@ def display_menu():
       
         
 display_menu()
+
