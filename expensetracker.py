@@ -1,11 +1,7 @@
-print("ian sucks balls")
-
-
-# Dictionary to store expenses
+#store expenses
 expenses = {}
 
-
-# add expense
+#adds expense
 def add_expense():
     category = input("Category: ")
     amount = float(input("Amount: $"))
@@ -26,7 +22,7 @@ def view_expense():
         for amount, date in records:
             print(f"{category}: ${amount} on {date}")
 
-
+#shows options for tracker
 def display_menu():
     while True:
         print("\nExpense Menu")
