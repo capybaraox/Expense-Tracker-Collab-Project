@@ -9,7 +9,7 @@ Challenges:
 - Cannot commit changes to the branch at the same time as another person without causing an error: Overcame by taking turns committing changes
 
 Collaborative coding:
-- Athena: Collaborative coding allows the project to be done quicker, however I find it to be less efficient for smaller projects. Writing only some parts of a program can cause a lack of understanding of others' code, and make the process more confusing. This may result in errors and bugs within the code, and makes debugging a lot more difficult. Since this project was quite straightforward, I enjoyed the collaboration, however overall, I would prefer individual coding.
+- Athena: Collaborative coding allows the project to be done quicker, however I find it to be less efficient for smaller projects. Writing only some parts of a program can cause a lack of understanding of others' code, and make the process more confusing. This may result in errors and bugs within the code, and makes debugging a lot more difficult. Since this project had multiple parts, I enjoyed the collaboration, however overall, I would prefer individual coding.
 
 - Andox:
 
