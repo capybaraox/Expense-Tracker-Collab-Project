@@ -57,6 +57,21 @@ def deleting_expense():
     except ValueError:
         print("Please enter valid numbers.")
 
+#Calculates total expenses. If dictionary is empty, display "No expenses to calculate"
+def total_expense():
+    if not expenses:
+        print("No expenses to calculate.\n")
+        return
+    
+    #Loops through the categories and their amounts and adds them to the total
+    total= 0
+    for records in expenses.values():
+        #Adds up "amount" values in expenses, but ignores "date" values
+        for amount, _ in records:
+            total += amount
+    
+    print(f"\nTotal Expenses: ${total:.2f}\n")
+    
 #shows options for tracker
 def display_menu():
     while True:
@@ -74,7 +89,7 @@ def display_menu():
         elif choice == '2':
             view_expense()
         elif choice == '3':
-            calculating_total()
+            total_expense()
         elif choice == '4':
             deleting_expense()
         elif choice == '5':
